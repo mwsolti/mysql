@@ -1,0 +1,22 @@
+
+Xsw23edC
+
+INSERT INTO `estacionamento`.`carros_estacionados`
+(`marca`,`modelo`,`placa`,`data_entrada`)
+VALUES
+('Fiat','Palio','CDE0987',now()),
+('Jeep','Compass','ABE7654',now()),
+('GM','Celta','ABG7854',now()),
+('Nissan','Tiida','KJH5643',now()),
+('Fiat','Argo','ABH7954',now());
+
+Select * from carros_estacionados where placa = 'ABC1234';
+
+Select * from carros_estacionados where marca = 'Jeep';
+
+
+Inserir 5 carros diferentes na tabela carros estacionados
+
+
+
+
