@@ -1,0 +1,34 @@
+Select	a.nome,
+	a.sobrenome, 
+	b.nota1,
+	b.nota2,
+	b.nota3 
+from	alunos a, 
+	boletim b
+where	a.id_alunos = b.id_alunos;
+
+
+Select	a.nome, 
+	a.sobrenome, 
+	round((b.nota1+b.nota2+b.nota3) / 3) as media
+from	alunos a,
+	boletim b
+where a.id_alunos = b.id_alunos;
+
+
+
+1 - Quais dados queremos
+
+2 - Onde estão estes dados
+
+3 - O que liga estes Dados
+
+4 - Filtrar dados
+
+
+
+UPDATE escola.teste_insert
+SET
+nr_teste = 3
+WHERE id_teste = 24700;
+
