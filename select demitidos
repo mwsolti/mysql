@@ -1,0 +1,31 @@
+select	d.id_demitido,
+		d.nome,
+		d.sobrenome,
+        d.CPF,
+        d.sexo,
+        e.rua,
+        e.nr_endereco,
+        e.bairro,
+        e.cidade,
+		e.uf,
+        e.pais,
+        e.cep,
+        s.cargo,
+        s.setor,
+        c.telefone,
+        c.email,
+        ch.turno,
+        f.salario_base,
+        f.salario_extra,
+        f.beneficio
+from	demitidos d,
+		endereco e,
+		contato c,
+        setor s,
+        financeiro f,
+        carga_horaria ch
+where d.id_endereco = e.id_endereco
+and  d.id_contato = c.id_contato
+and d.id_setor = s.id_setor
+and d.id_financeiro = f.id_financeiro
+and d.id_carga_horaria = ch.id_carga_horaria	
