@@ -1,0 +1,12 @@
+Criar Banco de Dados chamado mercado
+	
+	A - Criar tabela estoque
+		(deve conter nome do produto, quantidade, preço)
+	
+	B - Criar tabela preço de produto
+		(produto, preço)
+
+	C - Criar um select que una as tabelas e adicionar o mesmo
+		a uma view.
+
+	D - Banco de conter 10 registros;
