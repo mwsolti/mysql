@@ -46,7 +46,7 @@ Values
 
 ------------------------------------------------------------------------------------------------------
 
-
+-- Select Geral
 select	pr.id_produto,
 		pr.nome_produto,
         pr.ds_produto,
@@ -56,7 +56,30 @@ from	produto pr,
 		estoque es,
 		preco_produto pp
 where pr.id_produto = pp.id_produto
-and pr.id_produto = es.id_produto
+and pr.id_produto = es.id_produto;
+
+
+-- Select apenas preço
+select	pr.id_produto,
+		pr.nome_produto,
+        pr.ds_produto,
+        pp.preco
+from	produto pr,
+		preco_produto pp
+where pr.id_produto = pp.id_produto;
+
+
+
+-- Select Apenas estoque
+select	pr.id_produto,
+		pr.nome_produto,
+        pr.ds_produto,
+        es.qt_produto
+from	produto pr,
+		estoque es
+where pr.id_produto = es.id_produto;
+
+
 
 
 
