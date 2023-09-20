@@ -42,3 +42,25 @@ Values
 (9,198),
 (20,36),
 (11,132);
+
+
+------------------------------------------------------------------------------------------------------
+
+
+select	pr.id_produto,
+		pr.nome_produto,
+        pr.ds_produto,
+        pp.preco,
+        es.qt_produto
+from	produto pr,
+		estoque es,
+		preco_produto pp
+where pr.id_produto = pp.id_produto
+and pr.id_produto = es.id_produto
+
+
+
+------------------------------------------------------------------------------------------------------------------
+
+
+
