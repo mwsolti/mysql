@@ -85,5 +85,8 @@ where pr.id_produto = es.id_produto;
 
 ------------------------------------------------------------------------------------------------------------------
 
+-- Select por asimilaridade de palavras
+select * from view_produtos
+where nome_produto like "%Om%"
 
 
