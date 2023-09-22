@@ -90,3 +90,22 @@ select * from view_produtos
 where nome_produto like "%Om%"
 
 
+
+-------------------------------------------------------------------------------------------------------------------
+--trigger
+
+Create Trigger insere_estoque after insert
+on mercado.produto
+for each row
+insert into mercado.estoque (id_produto,qt_produto) 
+values
+(new.id_produto,0);
+
+delimiter ;
+
+
+
+
+
+
+
