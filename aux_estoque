@@ -1,0 +1,8 @@
+CREATE TABLE aux_estoque (
+  id_aux_estoque int NOT NULL AUTO_INCREMENT,
+  operacao int NOT NULL,
+  qt_produto int Not  Null,
+  id_estoque int not null,
+  PRIMARY KEY (id_aux_estoque));
+   
+  drop table aux_estoque;
