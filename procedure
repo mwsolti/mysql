@@ -1,0 +1,13 @@
+DELIMITER //
+
+CREATE PROCEDURE SP_atualiza_estoque (operacao int, nova_qt_produto int, id_estoque int)
+Begin
+	-- adiciona estoque
+    IF operacao = 1 then
+		Update estoque set qt_produto = qt_produto + nova_qt_produto  where id_estoque = id_estoque;
+	-- subitrai estoque
+	ELSEIF operacao = 2 then
+				Update estoque set qt_produto = qt_produto - nova_qt_produto  where id_estoque = id_estoque;
+	END IF;
+
+END
