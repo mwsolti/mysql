@@ -1,0 +1,22 @@
+create database mercado;
+
+use mercado;
+
+CREATE TABLE estoque (
+  id_estoque int NOT NULL AUTO_INCREMENT,
+  id_produto int NOT NULL,
+qt_produto int not null,
+  PRIMARY KEY (id_estoque));
+
+CREATE TABLE preco_produto (
+  id_preco_produto int NOT NULL AUTO_INCREMENT,
+  id_produto int NOT NULL,
+ preco decimal not null,
+  PRIMARY KEY (id_preco_produto));
+
+
+CREATE TABLE produto(
+  id_produto int NOT NULL AUTO_INCREMENT,
+  nome_produto varchar(100) NOT NULL,
+ds_produto varchar(500),
+  PRIMARY KEY (id_produto));
