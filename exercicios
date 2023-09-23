@@ -1,0 +1,30 @@
+
+Crie uma tabela chamada auxx_preco
+	id_aux_preco int not null pk ai
+	operacao int not null
+	preco decimal not null
+	id_preco_produto int not null
+
+
+Criar procedure que verifique a operacaousanod IFs e diminua ou almente o preço 
+com o valor inserido na tabela aux_preco
+nome procedure : SP_atualiza_preco
+
+
+Criar tabela chamada sugestoes
+	id_sugestao int not null pk ai
+	id_cliente int not null
+	ds_sugestao varchatr(500)
+
+
+crai tabela cliente
+	id_cliente int not null pk ai
+	nome carchar(100) not null
+
+
+
+criar procedure que insira um valor padrão na tabela sugestão no campo ds_sugestao
+	campos id_cliente
+
+
+criar trigger que acione a procedure 
